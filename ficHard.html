@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="getFictHard();">
+    <h2 class="ui header" id="head">
+        <i class="book reader icon"></i>
+        <div class="content">
+            NY Times Best Sellers
+        </div>
+    </h2>
+    <a href="./index.html">Home</a>
+    <div class="ui dropdown">
+        <input type="hidden" name="fiction" wtx-context="1CB84C4D-AE40-4F1D-B9EC-C4EAB75C4167">
+        <i class="dropdown icon"></i>
+        <div class="default text">Fiction</div>
+        <div class="menu">
+            <div class="item" data-value="ebook"><a href="print.html">Combined Print & E-Book</a></div>
+            <div class="item" data-value="hard"><a href="ficHard.html">Hardcover</a></div>
+            <div class="item" data-value="paperback"><a href="ficPaper.html">Paperback Trade</a></div>
+        </div>
+    </div>
+    <div class="ui dropdown">
+        <input type="hidden" name="non" wtx-context="1CB84C4D-AE40-4F1D-B9EC-C4EAB75C4167">
+        <i class="dropdown icon"></i>
+        <div class="default text">Non Fiction</div>
+        <div class="menu">
+            <div class="item" data-value="comebook"><a href="ebookNon.html">Combined Print & E-Book</a></div>
+            <div class="item" data-value="hardcover"><a href="hardNon.html">Hardcover</a></div>
+            <div class="item" data-value="paperback"><a href="paperNon.html">Paperback</a></div>
+            <div class="item" data-value="advice"><a href="miscNon.html">Advice, How-To & Miscellaneous</a></div>
+        </div>
+    </div>
+    <div class="ui dropdown">
+        <input type="hidden" name="reviews" wtx-context="1CB84C4D-AE40-4F1D-B9EC-C4EAB75C4167">
+        <i class="dropdown icon"></i>
+        <div class="default text">Book Reviews</div>
+        <div class="menu">
+            <div class="item" data-value="fiction">Fiction</div>
+            <div class="item" data-value="nonfiction">Non Fiction</div>
+        </div>
+    </div>
+    <div id="headerPrint"></div>
+    <div class="ui grid">
+
+    </div>
+</body>
+
+</html>
