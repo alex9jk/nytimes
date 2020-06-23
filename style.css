@@ -1,0 +1,11 @@
+#head {
+    width:25%;
+    margin:0 auto;
+}
+#headerPrint {
+    padding:2em;
+}
+.contentDesc{
+    padding: 1em;
+    height: 220px;
+}
